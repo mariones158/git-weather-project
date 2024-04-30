@@ -1,5 +1,8 @@
 import { useState } from "react";
-import "/src/components/styles/WeatherCard.css";
+import imagesW from '../images/icon_winds.png';
+import imagesC from '../images/icon_clouds.png';
+import imagesP from '../images/icon_pressure.png';
+
 
 const WeatherCard = ({ weather, temp }) => {
   const [isCelsius, setIsCelsius] = useState(true);
@@ -54,8 +57,9 @@ const WeatherCard = ({ weather, temp }) => {
 
             <div className="absolute w-[610px] h-[269px] top-0 left-0 bg-white rounded-[50px] shadow-[0px_1px_25px_#0000000d]">
             <div className="inline-flex items-center gap-[25px] absolute top-[160px] left-[90px]">
-              <img  className="relative w-[50px] h-[50px]" alt="Solar cloud sun" src="./src/images/icon_winds.png" />
-                   
+              <img  className="relative w-[50px] h-[50px]"  src={imagesW}/>  
+                                                                            
+              
               <div className="inline-flex flex-col items-start relative flex-0">
                 <div className="relative w-fit mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
                   Wind Speed
@@ -67,7 +71,7 @@ const WeatherCard = ({ weather, temp }) => {
             </div>
 
             <div className="inline-flex items-center gap-[25px] absolute top-[60px] left-[90px]">
-             <img  className="relative w-[50px] h-[50px]" alt="Solar cloud sun" src="./src/images/icon_clouds.png" />
+             <img  className="relative w-[50px] h-[50px]" src={imagesC} />
               <div className="inline-flex flex-col items-start relative flex-0">
                 <div className="mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal relative w-fit text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
                   Clouds
@@ -78,10 +82,8 @@ const WeatherCard = ({ weather, temp }) => {
               </div>
             </div>
 
-
-
             <div className="inline-flex items-center gap-[25px] absolute top-[60px] left-[389px]">
-            <img  className="relative w-[50px] h-[50px]" alt="Solar cloud sun" src="./src/images/icon_clouds.png" />   
+            <img  className="relative w-[50px] h-[50px]" src={imagesP} />   
                        
               <div className="inline-flex flex-col items-start relative flex-0">
                 <div className="mt-[-1.00px] [font-family:'Poppins-Regular',Helvetica] font-normal relative w-fit text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
