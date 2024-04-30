@@ -55,7 +55,7 @@ const WeatherCard = ({ weather, temp }) => {
 
         <article className="absolute  top-[532px] left-[801px] translate-x-[-120px] rounded-[50px]">
 
-            <div className="absolute w-[610px] h-[269px] top-0 left-0 bg-white rounded-[50px] shadow-[0px_1px_25px_#0000000d]">
+            <div className="absolute w-[610px] h-[269px] top-0 left-0 bg-white rounded-[50px] shadow-[0px_1px_25px_#0000001a]">
             <div className="inline-flex items-center gap-[25px] absolute top-[160px] left-[90px]">
               <img  className="relative w-[50px] h-[50px]"  src={imagesW}/>  
                                                                             
