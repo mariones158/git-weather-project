@@ -14,7 +14,7 @@ const WeatherCard = ({ weather, temp }) => {
 
 /*     seccion de color fondo y medidas */
 
-    <main className="bg-[#FFF9E4] w-full h-full h-screen">
+    <main className="bg-[FEFEF5] w-full h-full h-screen">
       <section className="min-h-0 h-[900px] flex flex-col items-center justify-center mx-auto">
       
 
