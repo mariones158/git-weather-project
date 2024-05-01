@@ -14,7 +14,7 @@ const WeatherCard = ({ weather, temp }) => {
 
 /*     seccion de color fondo y medidas */
 
-    <main className="bg-[FEFEF5] w-full h-full h-screen">
+    <main className="bg-[FEFEF5] w-full h-full">
       <section className="min-h-0 h-[900px] flex flex-col items-center justify-center mx-auto">
       
 
@@ -65,7 +65,7 @@ const WeatherCard = ({ weather, temp }) => {
                   Wind Speed
                 </div>
                 <div className="[font-family:'Poppins-Bold',Helvetica] font-bold relative w-fit text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
-                {weather?.wind.speed}
+                {weather?.wind.speed} m/s
                 </div>
               </div>
             </div>
@@ -77,7 +77,7 @@ const WeatherCard = ({ weather, temp }) => {
                   Clouds
                 </div>
                 <div className="[font-family:'Poppins-Bold',Helvetica] font-bold relative w-fit text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
-                {weather?.clouds.all}
+                {weather?.clouds.all} %
                 </div>
               </div>
             </div>
@@ -90,7 +90,7 @@ const WeatherCard = ({ weather, temp }) => {
                 Pressure
                 </div>
                 <div className="[font-family:'Poppins-Bold',Helvetica] font-bold relative w-fit text-[#3c3c3c] text-[16px] tracking-normal leading-[normal]">
-                {weather?.main.pressure}
+                {weather?.main.pressure} hPa
                 </div>
               </div>
             </div>
